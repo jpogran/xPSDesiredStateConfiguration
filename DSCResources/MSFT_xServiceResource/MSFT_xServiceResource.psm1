@@ -104,6 +104,7 @@ function Test-TargetResource
         $Ensure="Present",
 
         [System.String]
+        [parameter(Mandatory = $true)]
         [ValidateNotNullOrEmpty()]
         $Path,
 

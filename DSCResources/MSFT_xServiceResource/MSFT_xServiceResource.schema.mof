@@ -10,7 +10,7 @@ class MSFT_xServiceResource : OMI_BaseResource
   [read] string Status;
   [write] string DisplayName;
   [write] string Description;
-  [write] string Path;
+  [required] string Path;
   [write] string Dependencies[];
   [write] uint32 StartupTimeout;
   [write,ValueMap{"Present", "Absent"},Values{"Present", "Absent"}] string Ensure;
